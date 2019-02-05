@@ -1,0 +1,36 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+num = input()
+numstr = num.split()
+numbers = list(map(int,numstr))
+numbers = sorted(numbers)
+
+Sum = 0
+Count_dict = {}
+
+for i in numbers:
+    Sum = Sum + i
+    Count_dict[i] = numbers.count(i)
+Mean = Sum/n 
+print(round(Mean,1))
+
+if n%2 == 0:
+    n2 = int(n/2-1)
+    n1 = int(n/2)
+    Median = (numbers[n1]+numbers[n2])/2
+else:
+    Median = (numbers[n/2])/2
+print(round(Median,1))
+
+min_val = 0
+max_val = 0
+max_key = 0
+
+a=[]
+if min(Count_dict.values()) == max(Count_dict.values()):
+    print(min(Count_dict.keys()))
+else:
+    for key,value in Count_dict.items():
+        if value == max(Count_dict.values()):
+            a.append(key)
+print(min(a))
