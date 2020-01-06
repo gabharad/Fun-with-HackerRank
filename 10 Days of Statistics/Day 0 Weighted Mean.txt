@@ -1,0 +1,14 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n = int(input())
+num1 = input()
+numstr1 = num1.split()
+numbers1 = list(map(int,numstr1))
+num2 = input()
+numstr2 = num2.split()
+numbers2 = list(map(int,numstr2))
+Sum_List = 0
+
+for i in range(n):
+    Sum_List = Sum_List + (numbers1[i]*numbers2[i])
+Weighted_Mean = Sum_List/sum(numbers2)
+print(round(Weighted_Mean,1))
