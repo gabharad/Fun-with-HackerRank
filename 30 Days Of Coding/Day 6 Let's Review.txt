@@ -1,0 +1,16 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+N = int(input())
+
+while N!=0:
+    S = input()
+    evenstring = ""
+    oddstring = ""
+    for index,letter in enumerate(S):
+        if index%2 == 0:
+            evenstring+=letter
+        else:
+            oddstring+=letter
+    print(evenstring+" "+oddstring)
+    N-=1
+
+
