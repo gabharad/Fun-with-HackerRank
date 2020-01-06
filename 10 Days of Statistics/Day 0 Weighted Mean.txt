@@ -12,3 +12,4 @@ for i in range(n):
     Sum_List = Sum_List + (numbers1[i]*numbers2[i])
 Weighted_Mean = Sum_List/sum(numbers2)
 print(round(Weighted_Mean,1))
+
