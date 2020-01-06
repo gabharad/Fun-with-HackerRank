@@ -49,3 +49,4 @@ else:
     Q3 = float(lstq3[nq3//2])
 
 print(round(Q3-Q1,1))
+
