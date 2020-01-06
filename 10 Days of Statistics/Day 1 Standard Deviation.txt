@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import math
+
+N = int(input())
+NumList = sorted(list(map(int,input().split())))
+
+Mean = 0
+SumSqrDistance = 0
+StdDeviation = 0
+
+Mean = sum(NumList)/N
+
+for num in NumList:
+    SumSqrDistance+=((num - Mean)**2)
+StdDeviation = round(math.sqrt(SumSqrDistance/N),1)
+print(StdDeviation)
+
+
+
+
+
