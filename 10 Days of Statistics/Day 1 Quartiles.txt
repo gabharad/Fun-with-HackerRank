@@ -44,3 +44,4 @@ else:
 print(int(Q1))
 print(int(Q2))
 print(int(Q3))
+
