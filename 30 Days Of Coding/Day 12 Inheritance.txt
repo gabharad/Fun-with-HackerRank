@@ -39,3 +39,5 @@ class Student(Person):
         elif avg >= 0 and avg < 40:
             grade ='T'
         return grade
+		
+		
