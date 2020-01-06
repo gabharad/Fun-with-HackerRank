@@ -1,0 +1,16 @@
+# Declare second integer, double, and String variables.
+#ii = 12
+ii = int(input())
+#dd=float(4)
+dd = float(input())
+#ss = "is the best place to learn and practice coding!"
+ss = input()
+# Read and save an integer, double, and String to your variables.
+
+# Print the sum of both integer variables on a new line.
+print(i+ii)
+# Print the sum of the double variables on a new line.
+print(d+dd)
+# Concatenate and print the String variables on a new line
+print(s+ss)
+# The 's' variable above should be printed first.
